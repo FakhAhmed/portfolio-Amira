@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description"
+        content="A clean, beautiful and responsive portfolio template for Developers! using only Html, CSS, and JavaScript">
+    <title>Controlo</title>
+    <link href="./css/header.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/home.css" rel="stylesheet" />
+    <link href="./css/about.css" rel="stylesheet" />
+    <link href="./css/service.css" rel="stylesheet" />
+    <link href="./css/portfolio.css" rel="stylesheet" />
+    <link href="./css/testimonials.css" rel="stylesheet" />
+    <link href="./css/testimonials.css" rel="stylesheet" />
+    <link href="./css/blog.css" rel="stylesheet" />
+    <link href="./css/contact.css" rel="stylesheet" />
+    <link href="./css/footer.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="brand-b">
+                    <a href="index.html" class="logo">Retour</a>
+                </div>
+            </div>
+            <div class="hamburger">
+            </div>
+            <div class="navbar">
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="title">
+                    <h1>Controlo</h1>
+                </div>
+                <div class="img">
+                    <img src="img/portfolio/web/controlo.png" alt='me' />
+                </div>
+                <div class="text">
+                    <h6>A Propos du projet:</h6>
+                    <p>L'application que nous développons est une application web. Celle-ci permet de gérer le placement
+                        des étudiants lors des contrôles à travers la création de plans de placement et de feuilles
+                        d’émargements, elle a un but professionnel puisqu'elle s'adresse à l'administration du
+                        département informatique de l'IUT de Bayonne et du Pays Basque.</p><br>
+                    <h6>Pitch de la fonctionnalité retenue:</h6>
+                    <p>La fonctionnalité que nous avons retenue pour notre application est le placement automatique des
+                        étudiants.
+                        Celui-ci se base sur des plans de salles qui seront fournis en CSV où on va venir appliquer de
+                        nombreuses contraintes qui définiront le placement :<br>
+                    <ul>
+                        <li>
+                            Le nombre de places séparant les étudiants.
+                        </li>
+
+                        <li>
+                            Le nombre de rangés séparant les étudiants (rare en salle, mais très fréquent en amphi).
+                        </li>
+                        <li>
+                            Les étudiants tier-temps qui doivent être dans des salles spécifiques avec des places
+                            précise selon l’utilisation d’un ordinateur ou non.
+                        </li>
+                        <li>
+                            Le nombre d’étudiants à placer, l’application vérifiera à partir des plans de placements
+                            déjà établis les salles qui sont disponibles pour effectuer le placement.
+                        </li>
+                        <li>
+                            Si le nombre d’étudiants est trop grand par rapport aux salles disponibles, l’application
+                            enverra une notification à l'utilisateur en l’invitant à ajouter de nouvelles salles.
+                        </li>
+                    </ul>
+                    </p><br>
+                    <p>
+                        On aura aussi des algorithmes différents afin de placer les étudiants :
+                    <ul>
+                        <li>
+                            Un placement selon les groupes : TP ou TD ou indifférent.
+                        </li>
+                        <li>
+                            Un placement par ordre alphabétique ascendant, descendant ou aléatoire.
+                        </li>
+                    </ul>
+                    </p><br>
+                    <h6>Compétences visées</h6>
+                    <p>Maîtriser les concepts de l'algorithmique et de la programmation</p>
+                    <div class="skills">
+                        <h6>Langages utilisés:</h6>
+                        <div class="skills-list">
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavaScript</li>
+                                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>PHP</li>
+                                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>CSS</li>
+                            </ul>
+                        </div>
+                        <div class="social">
+                            Code source:
+                            <a target="_blank"
+                                href="S3.01A-Developpement-d-application-et-Gestion-de-projet-V-1-5.zip"><i
+                                    class="fa fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="portfolio" id="Projets">
+        <div class="container">
+            <div class="row">
+                <div class="title text-center">
+                    <h1>Média</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="filter-btn">
+                    <ul id="filterBtn">
+                        <li class="active" data-target="all">Tout</li>
+                        <li data-target="web">Images</li>
+                        <li data-target="ui">Video</li>
+                        <li data-target="soutenance">Soutenance</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="gallery">
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/1.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Controlo</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/2.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Manuel Utilisateur</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/3.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Accueil</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/4.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Liste des contrôles</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/5.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Ajouter un contrôle</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/6.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Importer une liste de contrôles</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/7.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Panel</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/8.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Modifier un contrôle</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/9.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Placer automatiquement</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/11.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Liste des étudiants</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/12.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Ajouter un étudiant</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/13.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Modifier un étudiant</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/14.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Liste des enseignants</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/15.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Ajouter un enseignant</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/16.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Modifier un enseignant</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/17.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Liste des promotions</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/18.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Ajouter une promotion</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/19.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Importer une promotion</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/20.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Modifier une promotion</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/21.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Liste des salles</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/22.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Plan de la salle S124</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/23.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Modifier une salle</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/24.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Ajouter une salle</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/25.png" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Importer une salle</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" data-id="soutenance">
+                        <div class=" inner">
+                            <img src="./img/portfolio/controlo/10.JPG" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Soutenance</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="soutenance">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/11.jpg" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Soutenance</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="soutenance">
+                        <div class="inner">
+                            <img src="./img/portfolio/controlo/12.jpg" alt="portfolio" />
+                            <div class="overlay">
+                                <span class="fa fa-plus"></span>
+                                <h4>Soutenance</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="ui">
+                        <video width="320" height="240" controls>
+                            <source src="./img/portfolio/controlo/genererPDF.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-logo">Ahmed Fakhfakh</div>
+                <div class="social-link">
+                    <a href="https://www.instagram.com/fakhfakhahmed/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://github.com/FakhAhmed"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/afakhfakh/"><i class="fa fa-linkedin"></i></a>
+                    <a target="_blank" href="mailto:fakhfakhahmed45@gmail.com"><i class="fa fa-envelope"></i></a>
+                    <a target="_blank" href="https://discordapp.com/users/1016749358986842152/"><i
+                            class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="lightbox hide">
+        <span class="close-lightbox fa fa-close"></span>
+        <img src="" alt="portfolio" />
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
